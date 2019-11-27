@@ -21,12 +21,16 @@ Or install it yourself as:
 ## Usage
 
 Check response code:
+```ruby
 Checkurl.response_code("https://www.google.com")  # {:code=>"200", :message=>"OK"}
 Checkurl.response_code("https://google.com/1234") # {:code=>"404", :message=>"Not Found"}
+```
 
 Check if URL is working or not:
+```ruby
 Checkurl.working?("https://www.google.com")   # true
 Checkurl.working?("https://qwerty.com")       # false
+```
 
 ## Development
 
