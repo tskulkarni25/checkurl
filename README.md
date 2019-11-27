@@ -1,8 +1,6 @@
 # Checkurl
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/checkurl`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Checkurl is a gem for checking details related to any given url. For example get response code, check if url is working or not, etc.
 
 ## Installation
 
@@ -22,13 +20,13 @@ Or install it yourself as:
 
 ## Usage
 
-# Check response code
-Checkurl.response_code("https://www.google.com") 	# {:code=>"200", :message=>"OK"}
-Checkurl.response_code("https://google.com/1234")	# {:code=>"404", :message=>"Not Found"}
+Check response code:
+Checkurl.response_code("https://www.google.com")  # {:code=>"200", :message=>"OK"}
+Checkurl.response_code("https://google.com/1234") # {:code=>"404", :message=>"Not Found"}
 
-# Check if URL is working or not
-Checkurl.working?("https://www.google.com")		# true
-Checkurl.working?("https://qwerty.com")			# false
+Check if URL is working or not:
+Checkurl.working?("https://www.google.com")   # true
+Checkurl.working?("https://qwerty.com")       # false
 
 ## Development
 
