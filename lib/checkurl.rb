@@ -3,7 +3,7 @@ require "checkurl/version"
 module Checkurl
   class Error < StandardError; end
   
-  class self
+  class << self
     def response_code url
       begin
         url = URI(url.strip)
